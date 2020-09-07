@@ -4,7 +4,7 @@ require 'pry'
 def reverse_each_word(string)
 array = string.split
   array_letters = []
-  array.each do |element|
+  array.collect do |element|
     array_letters.push(element.chars)
   end
   reversed_nested_array = []
