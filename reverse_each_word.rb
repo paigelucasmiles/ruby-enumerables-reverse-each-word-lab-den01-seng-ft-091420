@@ -17,7 +17,7 @@ array = string.split
     temp_reversed_nested_array.clear
   end
   reversed_nested_words = []
-  reversed_nested_array.each do |srettel|
+  reversed_nested_array.collect do |srettel|
     reversed_nested_words.push(srettel.join("").clone)
   end
   reversed_nested_words.join(" ")
