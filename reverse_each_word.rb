@@ -9,7 +9,7 @@ array = string.split
   end
   reversed_nested_array = []
   temp_reversed_nested_array = []
-  array_letters.each do |word|
+  array_letters.collect do |word|
     word.reverse_each do |letters|
       temp_reversed_nested_array.push(letters)
     end
